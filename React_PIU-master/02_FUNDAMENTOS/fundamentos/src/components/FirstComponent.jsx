@@ -1,7 +1,7 @@
 //criando primeiro componente
 
 function FirstComponent (){ //declaração da função com nome em CamelCase
-//definição de parâmetros da função: variavei e/ou função por exemplo.
+//definição de parâmetros da função: variavel e/ou função por exemplo.
     return(
         //cada componenete deve ter apenas um elemento pai!
         <div className="first">
