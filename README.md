@@ -161,3 +161,101 @@ Isso mostra que você sabe componentizar bem e reutilizar seu código.
 
 Se quiser, posso te ajudar a montar o esqueleto inicial do projeto ou gerar os arquivos! Deseja isso?
 
+Claro! Com base na avaliação prática de React que você enviou, vou escrever os dois componentes solicitados:
+
+
+---
+
+✅ COMPONENTE 01 – Contador de Clicks Bidirecional
+
+Crie um arquivo chamado Contador.jsx com o seguinte conteúdo:
+
+// Contador.jsx
+import React, { useState } from 'react';
+
+const Contador = () => {
+  const [contador, setContador] = useState(0);
+
+  const incrementar = () => setContador(contador + 1);
+  const decrementar = () => setContador(contador - 1);
+
+  return (
+    <div>
+      <h2>Contador: {contador}</h2>
+      <button
+        onClick={incrementar}
+        style={{
+          backgroundColor: contador > 10 ? 'green' : 'lightgray',
+          marginRight: '10px'
+        }}
+      >
+        Incrementar
+      </button>
+      <button
+        onClick={decrementar}
+        style={{
+          backgroundColor: contador < 0 ? 'red' : 'lightgray'
+        }}
+      >
+        Decrementar
+      </button>
+    </div>
+  );
+};
+
+export default Contador;
+
+
+---
+
+✅ COMPONENTE 02 – Edição de Listas
+
+Crie um arquivo ListaCarros.jsx, assumindo que você tenha o arquivo dados_carro.js com algo assim:
+
+// dados_carro.js
+export const carros = [
+  { modelo: "Fiesta", ano: 2014, cor: "vermelha" },
+  { modelo: "Civic", ano: 2020, cor: "preta" },
+  { modelo: "Corolla", ano: 2018, cor: "vermelha" },
+  { modelo: "Gol", ano: 2012, cor: "branca" },
+];
+
+Agora o componente:
+
+// ListaCarros.jsx
+import React from 'react';
+import { carros } from './dados_carro';
+
+const ListaCarros = () => {
+  return (
+    <div>
+      <h2>Todos os carros:</h2>
+      <ul>
+        {carros.map((carro, index) => (
+          <li key={index}>
+            Modelo: {carro.modelo}, Ano: {carro.ano}
+          </li>
+        ))}
+      </ul>
+
+      <h2>Carros vermelhos:</h2>
+      <ul>
+        {carros
+          .filter(carro => carro.cor.toLowerCase() === 'vermelha')
+          .map((carro, index) => (
+            <li key={index}>
+              Modelo: {carro.modelo}
+            </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ListaCarros;
+
+
+---
+
+Se quiser, posso te ajudar a configurar o projeto React completo com esses dois componentes e o arquivo de dados. Deseja isso também?
+
