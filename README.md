@@ -257,5 +257,4 @@ export default ListaCarros;
 
 ---
 
-Se quiser, posso te ajudar a configurar o projeto React completo com esses dois componentes e o arquivo de dados. Deseja isso também?
-
+`set PATH=C:\Users\20221101110095\Desktop\nvm-noinstall\nvm\v20.19.0;%PATH%`
