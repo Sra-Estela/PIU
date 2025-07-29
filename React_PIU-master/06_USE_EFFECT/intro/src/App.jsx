@@ -3,6 +3,7 @@ import CountClicks from './componentes/CountClicks'
 import EffectAPI from './componentes/EffectAPI'
 import RepoJson from './componentes/RepoJson'
 import EnviarDados from './componentes/EnviarDados'
+import TemaColor from './componentes/TemaColor'
 
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
       {/* <CountClicks/> */}
       {/* <EffectAPI /> */}
       {/* <RepoJson /> */}
-      <EnviarDados />
-      
+      {/* <EnviarDados /> */}
+      <TemaColor/>
+
     </>
   )
 }

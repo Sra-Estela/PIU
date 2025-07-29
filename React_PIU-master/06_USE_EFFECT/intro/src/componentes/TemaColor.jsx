@@ -27,11 +27,26 @@ const ThemeToggler = () => {
     const [theme, setTheme] = useState('light');
 
     useEffect(() => {
-        document.body.className = theme;
+        if (theme === 'light') {
+            document.body.style.backgroundColor = '#ffffff';
+            document.body.style.color = '#000000';
+        } else {
+            document.body.style.backgroundColor = '#121212';
+            document.body.style.color = '#ffffff';
+        }
+
         localStorage.setItem('theme', theme);
     }, [theme]);
 
     const toggleTheme = () => {
-        setTheme((prevTheme)) 
-    }
-}
+        setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    };
+
+    return (
+        <button onClick={toggleTheme}>
+            Ativar "{theme === 'light' ? 'dark' : 'light'}" modo?
+        </button>
+    );
+};
+
+export default ThemeToggler;
