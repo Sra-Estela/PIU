@@ -4,6 +4,8 @@ import EffectAPI from './componentes/EffectAPI'
 import RepoJson from './componentes/RepoJson'
 import EnviarDados from './componentes/EnviarDados'
 import TemaColor from './componentes/TemaColor'
+import InputGround from './componentes/InputGround'
+import TelaLogin from './componentes/TelaLogin'
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       {/* <RepoJson /> */}
       {/* <EnviarDados /> */}
       <TemaColor/>
+      <InputGround/>
+      <TelaLogin/>
 
     </>
   )
