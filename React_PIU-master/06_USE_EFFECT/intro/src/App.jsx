@@ -8,7 +8,7 @@ import InputGround from './componentes/InputGround'
 import TelaLogin from './componentes/TelaLogin'
 import ListaMap from './componentes/ListaMap'
 import TaskManager from './componentes/TaskManager'
-import InputSenha from './componentes/InputSenha'
+import InputPalavra from './componentes/InputPalavra'
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       {/* <TelaLogin/> */}
       {/* <ListaMap /> */}
       {/* <TaskManager /> */}
-      <InputSenha/>
+      <InputPalavra/>
 
     </>
   )
