@@ -6,7 +6,7 @@ import EnviarDados from './componentes/EnviarDados'
 import TemaColor from './componentes/TemaColor'
 import InputGround from './componentes/InputGround'
 import TelaLogin from './componentes/TelaLogin'
-
+import ListaMap from './componentes/ListaMap'
 
 function App() {
 
@@ -19,6 +19,7 @@ function App() {
       <TemaColor/>
       <InputGround/>
       <TelaLogin/>
+      <ListaMap />
 
     </>
   )
