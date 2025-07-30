@@ -8,6 +8,8 @@ import InputGround from './componentes/InputGround'
 import TelaLogin from './componentes/TelaLogin'
 import ListaMap from './componentes/ListaMap'
 import TaskManager from './componentes/TaskManager'
+import InputSenha from './componentes/InputSenha'
+
 
 function App() {
 
@@ -17,11 +19,12 @@ function App() {
       {/* <EffectAPI /> */}
       {/* <RepoJson /> */}
       {/* <EnviarDados /> */}
-      <TemaColor/>
-      <InputGround/>
-      <TelaLogin/>
-      <ListaMap />
-      <TaskManager />
+      {/* <TemaColor/> */}
+      {/* <InputGround/> */}
+      {/* <TelaLogin/> */}
+      {/* <ListaMap /> */}
+      {/* <TaskManager /> */}
+      <InputSenha/>
 
     </>
   )
