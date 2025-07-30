@@ -22,7 +22,7 @@ function App() {
       {/* <TemaColor/> */}
       {/* <InputGround/> */}
       {/* <TelaLogin/> */}
-      {/* <ListaMap /> */}
+      <ListaMap />
       {/* <TaskManager /> */}
       <InputPalavra/>
 
